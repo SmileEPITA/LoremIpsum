@@ -1,0 +1,67 @@
+/*fonds*/
+*{
+    padding: 0;
+    margin :0;
+  }
+  body{
+    background-color: rgb(102, 75, 197);
+  }
+  /*tête */
+  header{
+    color: #fff;
+  }
+  #conteneur{
+   list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 20px;
+  }
+  #elt a{
+    text-decoration: none;
+    color:#fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    margin:10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+  }
+  #elt a:hover{
+    background: #fff;
+    color: black;
+  }
+  a {
+    text-decoration: none;
+    color:white;
+    padding: 10px 10px;
+    border: 0px solid transparent;
+    transition: 0.2s ease;
+  }
+  /*images*/
+  img{
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin:0;
+    padding:0;
+    border-radius: 50%;
+    text-align: center;
+  }
+  img:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  .image{
+    /*display: flex;
+    justify-content: space-around;
+    align-items: center;*/
+    border: 0;
+    text-decoration: none;
+  }
+  .name{
+    font-family: Impact, fantasy;
+  }
+  .job{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
