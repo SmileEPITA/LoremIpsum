@@ -37,8 +37,100 @@
     border: 0px solid transparent;
     transition: 0.2s ease;
   }
-  /*images*/
-  img{
+  /*---------------Les Profils--------------------------------*/
+.container-bis{
+    margin-top:25%;
+    max-width:950px;
+    width:100%;
+    overflow:hidden;
+    padding:80px 0;
+}
+.container-bis .main-card{
+    display:flex;
+    justify-content:space-evenly;
+    width:200%;
+    transition:1s;
+}
+#two:checked~.main-card{
+    margin-left:-100%;
+}
+.container-bis .main-card .cards{
+    width:cal(100%/2-10px);
+    display:flex;
+    flex-wrap:wrap;
+    margin:0 20 px;
+    justify-content: space-between;
+}
+.main-card .cards .card-bis{
+    width :calc(100%/3 -10px);
+    background:#fff;
+    border-radius: 12px;
+    padding: 30 px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.225);
+    transition:all 0.4s ease;
+}
+.main-card .cards .card-bis:hover{
+    transform:translateY(-15px);
+}
+.cards .card-bis .content-bis {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cards .card-bis .content-bis .img {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #001145;
+  margin-bottom: 14px;
+}
+
+.card-bis .content-bis .img img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-bis .content-bis .name {
+  font-size: 20px;
+  font-weight: 500;
+}
+.card-bis .content-bis .job {
+  font-size: 20px;
+  color: #001145;
+}
+.card-bis .content-bis{
+  margin-top: 10px;
+  display: flex;
+}
+.container-bis .button-bis {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+@media (max-width: 768px) {
+  .main-card .cards .card-bis {
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+
+@media (max-width: 600px) {
+  .main-card .cards .card-bis {
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+}
+
+  /*img{
     width: 150px;
     height: 150px;
     float: left;
@@ -64,4 +156,4 @@
   }
   .job{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+  }*/
