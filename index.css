@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin :0;
+  }
+
+  #conteneur{
+    list-style: none;
+     float: right;
+     display: flex;
+     margin-top: 20px;
+   }
+   #elt a{
+     text-decoration: none;
+     color:#fff;
+     padding: 10px 20px;
+     text-transform: uppercase;
+     border: 1px solid transparent;
+     margin:10px;
+     font-weight: 500;
+     transition: 0.6s ease;
+   }
+   #elt a:hover{
+     background: #fff;
+     color: black;
+   }
+   a {
+     text-decoration: none;
+     color:white;
+     padding: 10px 10px;
+     border: 0px solid transparent;
+     transition: 0.2s ease;
+   }
+
+header{
+    list-style: none;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    color : red;
+}
+
+body{
+    background-image: linear-gradient(blue,white);
+}
+
+#tableau{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
