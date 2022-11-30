@@ -1,97 +1,94 @@
-/*fonds*/
 *{
     padding: 0;
     margin :0;
   }
   body{
-      background-color: rgb(200, 162, 200);
+    background-color: rgb(102, 75, 197);
   }
   /*tête */
   header{
-      color: #fff;
+    color: #fff;
   }
-  
   #conteneur{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin: 30px;
+   list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 20px;
   }
-  
-   #elt a:hover{
-      background: #fff;
-      color: black;
+  #elt a{
+    text-decoration: none;
+    color:#fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    margin:10px;
+    font-weight: 500;
+    transition: 0.6s ease;
   }
-  a {
-      text-decoration: none;
-      color:white;
-      padding: 10px 10px;
-      border: 0px solid transparent;
-      transition: 0.2s ease;
+  #elt a:hover{
+    background: #fff;
+    color: black;
   }
-  /* menu déroulant */
-  nav{
-      width: 100%;
-      margin: 0 auto;
-      background-color: rgb(200, 162, 200);
-      position: sticky;
-      top: 0 px;
+  /*menu*/
+#menu{
+   /* padding:0;
+    margin:0;
+    list-style:none;
+    text-align: center;
+    width: 180px;*/
+    
+    top : 900 px;
+    /*width: 400 px;
+    height: 160px;*/
+    padding: auto;
+    list-style: none;
   }
-  nav ul{
-      list-style-type: none;
+  #menu ul {
+    /*padding:0;
+    margin:0;*/
+    list-style:none;
+    text-align: center;
   }
-  nav ul li {
-      float: left;
-      width: 25%;
-      text-align: center;
-      position: relative;
-     
+  #menu li {
+     background-color:#729EBF; 
+     background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+     background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+     border-radius: 6px;
+     margin-bottom:2px;
+     box-shadow: 3px 3px 3px #999;
+     border:solid 1px  rgb(102, 75, 197)
   }
-  nav ul::after{
-      content: "";
-      display: table;
-      clear:both;
+  #menu li li {
+     max-height:0;
+     overflow: hidden;
+     transition: all .5s;
+     border-radius:0;
+     background: #444;
+     box-shadow: none;
+     border:none;
+     margin:0
   }
-  nav a{
-      display: block;
-      text-decoration: none;
-      color: black;
-      border-bottom: 3px solid transparent;
-      padding: 10px 0px;
+  #menu a {
+    display:block;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 0;
+    font-family: verdana;
+    font-size:1.2em
   }
-  nav a:hover h1 {
-      font-weight: bold;
+  #menu ul li a, #menu li:hover li a {
+    font-size:1em
   }
-  nav a:hover{
-      color:black;
-      border-bottom: 2px solid white;
-      
+  #menu  li:hover {
+     background: #b972bf
   }
-  .sous{
-      display: none;
-      box-shadow: 0px 1px 2px #CCC;
-      background-color:white;
-      position: absolute;
-      width: 100%;
-      z-index: 1000;
+  #menu li li:hover {
+     background: #999;
   }
-  nav > ul li:hover .sous{
-      display: block;
+  #menu ul li:last-child {
+     border-radius: 0 0 6px 6px;
+     border:none;
   }
-  .sous li {
-      float: none;
-      width: 100%;
-      text-align: left;
-  }
-  .sous a {
-      padding: 10px;
-      border-bottom: none;
-  }
-  .sous a:hover{
-      border-bottom: none;
-      background-color:rgba(200, 200,200, 0.1) ;
-  }
-  .menu >a::after{
-      content: "▼";
-      font-size: 12px;
+  #menu li:hover li {
+    max-height: 15em;
   }
