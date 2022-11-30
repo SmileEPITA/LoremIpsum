@@ -1,21 +1,21 @@
 *{
     padding: 0;
     margin :0;
-  }
-  body{
+}
+body{
     background-color: rgb(102, 75, 197);
-  }
+}
   /*tête */
-  header{
+header{
     color: #fff;
-  }
-  #conteneur{
+}
+#conteneur{
    list-style: none;
     float: right;
     display: flex;
     margin-top: 20px;
-  }
-  #elt a{
+}
+#elt a{
     text-decoration: none;
     color:#fff;
     padding: 10px 20px;
@@ -24,11 +24,11 @@
     margin:10px;
     font-weight: 500;
     transition: 0.6s ease;
-  }
-  #elt a:hover{
+}
+#elt a:hover{
     background: #fff;
     color: black;
-  }
+}
   /*menu*/
 #menu{
    /* padding:0;
@@ -42,14 +42,14 @@
     height: 160px;*/
     padding: auto;
     list-style: none;
-  }
-  #menu ul {
+}
+#menu ul {
     /*padding:0;
     margin:0;*/
     list-style:none;
     text-align: center;
-  }
-  #menu li {
+}
+#menu li {
      background-color:#729EBF; 
      background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
      background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
@@ -57,8 +57,8 @@
      margin-bottom:2px;
      box-shadow: 3px 3px 3px #999;
      border:solid 1px  rgb(102, 75, 197)
-  }
-  #menu li li {
+}
+#menu li li {
      max-height:0;
      overflow: hidden;
      transition: all .5s;
@@ -67,28 +67,28 @@
      box-shadow: none;
      border:none;
      margin:0
-  }
-  #menu a {
+}
+#menu a {
     display:block;
     text-decoration: none;
     color: #fff;
     padding: 8px 0;
     font-family: verdana;
     font-size:1.2em
-  }
-  #menu ul li a, #menu li:hover li a {
+}
+#menu ul li a, #menu li:hover li a {
     font-size:1em
-  }
-  #menu  li:hover {
+}
+#menu  li:hover {
      background: #b972bf
-  }
-  #menu li li:hover {
+}
+#menu li li:hover {
      background: #999;
-  }
-  #menu ul li:last-child {
+}
+#menu ul li:last-child {
      border-radius: 0 0 6px 6px;
      border:none;
-  }
-  #menu li:hover li {
+}
+#menu li:hover li {
     max-height: 15em;
-  }
+}
