@@ -4,7 +4,7 @@
     margin :0;
   }
   body{
-    background-color: rgb(102, 75, 197);
+    background-color: #1d1e31;
   }
   /*tête */
   header{
@@ -37,31 +37,120 @@
     border: 0px solid transparent;
     transition: 0.2s ease;
   }
-  /*images*/
-  img{
-    width: 150px;
-    height: 150px;
-    float: left;
-    margin:0;
-    padding:0;
-    border-radius: 50%;
+/*cartes*/
+::selection {
+    background: #0a0f26;
+    color: #fff;
+  }
+  
+  .container-bis {
+    margin-top: 25%;
+    max-width: 950px;
+    width: 100%;
+    overflow: hidden;
+    padding: 80px 0;
+  }
+  .container-bis .main-card {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    max-width: 1500px;
+    margin: 0 auto;
+    /*width: 200%;
+    transition: 1s;*/
+  }
+  .container-bis .main-card .cards {
+    width: calc(100% / 2 - 10px);
+    vertical-align: middle;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    justify-content: space-between;
+  }
+  
+  .main-card .cards .card-bis {
+    
+    width: calc(100% / 3 - 10px);
+    background: #fff;
+    justify-items: center;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+  }
+  .main-card .cards .card-bis:hover {
+    transform: translateY(-15px);
+  }
+  
+  .cards .card-bis .content-bis {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
-  img:hover{
-    -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
+  
+  .cards .card-bis .content-bis .img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #001145;
+    margin-bottom: 14px;
   }
-  .image{
-    /*display: flex;
-    justify-content: space-around;
-    align-items: center;*/
-    border: 0;
-    text-decoration: none;
+  
+  .card-bis .content-bis .img img {
+    height: 100%;
+    width: 100%;
+    border: 3px solid #ffff;
+    border-radius: 50%;
+    object-fit: cover;
   }
-  .name{
-    font-family: Impact, fantasy;
+  .card-bis .content-bis .name {
+    font-size: 20px;
+    font-weight: 500;
   }
-  .job{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  .card-bis .content-bis .job {
+    font-size: 20px;
+    color: #001145;
+  }
+  /*histoire de notre société et section 3*/
+  h1
+  {
+    font-family: Luminari, fantasy;
+    color: black;
+    text-align: center;
+    font-size: 3em;
+    text-decoration:black wavy underline;
+  }
+  p{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    color: #fff;
+    font-size: 2em;
+    
+  }
+  .sec3{
+    z-index:99;
+    overflow: hidden;
+    background-color:#63646d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .sec4{
+    z-index:99;
+    overflow: hidden;
+    background-color:#63646d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .sec3 img {
+    filter: drop-shadow(0px 8px 5px rgba(254,198,117,0.75));
+  }
+  .sec4 img {
+    filter: drop-shadow(0px -8px 5px rgba(254,198,117,0.75));
   }
